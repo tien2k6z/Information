@@ -1,0 +1,1 @@
+document.querySelector(".tips").innerText = "(Không chia sẻ ở bất kỳ hình thức nào)"
