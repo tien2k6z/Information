@@ -147,9 +147,6 @@ border: 2px solid #fff; /* Viền trắng cho mỗi mục danh sách */
     border: 2px solid #00ffaa; /* Màu viền khi hover */
 }
 
-.div-app ul li a:hover {
-    border: 2px solid #00ffaa; /* Màu viền khi hover */
-    }
 
 .div-app ul li a {
     height: 100%;
