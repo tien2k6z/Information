@@ -1,11 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins&family=Indie+Flower&family=Caveat&display=swap');
-
-html, body {
+html {
     height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 body::-webkit-scrollbar {
@@ -59,15 +63,17 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: end;
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .div-avatar {
     height: 40%;
     width: 33%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     align-items: center;
+    /* background-color: rgba(255, 0, 0, 0.5); */
 }
 
 .border-avatar {
@@ -136,7 +142,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
     background-color: #666666;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-border: 2px solid #fff; /* Viền trắng cho mỗi mục danh sách */
+    /* box-shadow: rgba(0, 255, 0, 0.4) 0px 5px, rgba(0, 255, 0, 0.3) 0px 10px, rgba(0, 255, 0, 0.2) 0px 15px, rgba(0, 255, 0, 0.1) 0px 20px, rgba(0, 255, 0, 0.05) 0px 25px; */
     transition: all 0.2s;
 }
 
@@ -144,12 +150,7 @@ border: 2px solid #fff; /* Viền trắng cho mỗi mục danh sách */
     width: 160px;
     border-radius: 10px;
     background-color: #303030;
-    border: 2px solid #00ffaa; /* Màu viền khi hover */
 }
-
-.div-app ul li a:hover {
-    border: 2px solid #00ffaa; /* Màu viền khi hover */
-    }
 
 .div-app ul li a {
     height: 100%;
