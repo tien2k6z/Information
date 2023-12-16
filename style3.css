@@ -173,7 +173,6 @@ border: 2px solid #fff; /* Viền trắng cho mỗi mục danh sách */
 }
 
 #project {
-    
     position: relative;
     z-index: 5;
     height: 550px;
@@ -190,7 +189,6 @@ border: 2px solid #fff; /* Viền trắng cho mỗi mục danh sách */
 
 #project span {
     font-weight: bold;
-    /* font-family: 'Pacifico', cursive; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -202,8 +200,6 @@ border: 2px solid #fff; /* Viền trắng cho mỗi mục danh sách */
     display: flex;
     justify-content: center;
     padding: 5px 0px;
-    /* box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(255, 255, 255, 0.22) 0px 15px 12px;
-    background-color: rgba(255, 255, 255, 0.25); */
 }
 
 #project span.tips {
@@ -216,7 +212,6 @@ border: 2px solid #fff; /* Viền trắng cho mỗi mục danh sách */
 }
 
 #project ul {
-    /* margin: 0px -50px 0px 0px; */
     margin: 0px;
     padding: 0px;
     height: 390px;
@@ -228,7 +223,6 @@ border: 2px solid #fff; /* Viền trắng cho mỗi mục danh sách */
     list-style: none;
     overflow-x: hidden;
     overflow-y: auto;
-    /* background-color: red; */
 }
 
 #project ul::-webkit-scrollbar {
@@ -241,14 +235,19 @@ border: 2px solid #fff; /* Viền trắng cho mỗi mục danh sách */
 }
 
 #project ul::-webkit-scrollbar-thumb {
-    /* background-image: linear-gradient(-45deg, #99f95a, #6efde5); */
     background-color: #fd6e6e;
     border-radius: 50px;
 }
 
 #project ul li {
-    margin: 0px;
-    transition: all 1s;
+    background-color: #161616;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+#project ul li:hover {
+    background-color: #303030;
 }
 
 #project ul li a {
@@ -284,7 +283,6 @@ border: 2px solid #fff; /* Viền trắng cho mỗi mục danh sách */
 }
 
 #project span.source a {
-    /* color: #551a8b; */
     color: #fff;
     transition: 0.2s;
 }
@@ -311,7 +309,7 @@ border: 2px solid #fff; /* Viền trắng cho mỗi mục danh sách */
 #footer span a {
     text-decoration: none;
     transition: 0.2s;
-}
+  }
 
 @media screen and (max-width: 1000px) {
     #header {
@@ -479,42 +477,3 @@ border: 2px solid #fff; /* Viền trắng cho mỗi mục danh sách */
         font-size: 12px;
     }
 }
-
-#project ul li {
-    background-color: #161616; /* Màu nền cho từng mục truyện */
-    border-radius: 20px;
-    overflow: hidden;
-    transition: background-color 0.3s;
-}
-
-#project ul li:hover {
-    background-color: #303030; /* Màu nền khi hover */
-}
-
-#project ul li a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #fff; /* Màu chữ */
-}
-
-#project ul li a img.preview {
-    width: 100%;
-    border-bottom: 2px solid #00ffaa;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-#project ul li a span.title {
-    font-size: 20px;
-    font-family: 'Caveat', sans-serif;
-    font-weight: bold;
-    padding: 10px;
-}
-
-#project span.source {
-    color: #00ffaa;
-    font-size: 12px;
-}
-
